@@ -20,6 +20,7 @@ The approach followed when determining the prediction has been the following:
 
 
 **Data to be downloaded**
+
 Go to https://www.kaggle.com/c/rsna-pneumonia-detection-challenge and download RSNA database. Change DATA paths! The folder must be named as ‘DCM’.
 You also need to download the data from https://www.kaggle.com/nih-chest-xrays/data. The folder must be named ‘images’.
 
