@@ -19,12 +19,13 @@ The approach followed when determining the prediction has been the following:
 	 - Other diseases 
 3) If the image has been predicted as pneumonia, the software locates the areas where the illness has been detected. 
 4) Afterwards, the “similar images” algorithm is applied for both cases, Pneumonia and Not Pneumonia:
-	- For case Pneumonia, test_one.py will show 2 similar images, one of them with Pneumonia (left) and another without(right), with the predicted bounding boxes printed on the test image (middle).   
-	![GitHub Logo](/examplesOfOutput/pneumonia.png)
-	- For case Healthy, test_one.py will show 1 similar image, diagnosed as healthy too	
-	- For case Other diseases, test_one.py will show 1 similar image, diagnosed as other diseases too, and the diagnosis made by a RSNA doctor will be printed as well. So that, even though we can’t create a model of every single Other Disease, what we could say to the user is that the Most Similar image from the Database is this one, and it has X disease.
+	- **For case Pneumonia**, test_one.py will show 2 similar images, one of them with Pneumonia (left) and another without(right), with the predicted bounding boxes printed on the test image (middle).   
+![ImagePneumonia](/examplesOfOutput/pneumonia.png)
+	- **For case Healthy**, test_one.py will show 1 similar image, diagnosed as healthy too	
+![ImagePneumonia](/examplesOfOutput/healthy.png)
+	- **For case Other diseases**, test_one.py will show 1 similar image, diagnosed as other diseases too, and the diagnosis made by a RSNA doctor will be printed as well. So that, even though we can’t create a model of every single Other Disease, what we could say to the user is that the Most Similar image from the Database is this one, and it has X disease.
+![ImagePneumonia](/examplesOfOutput/nothealthy.png)
 	
-
 
 ## Data to be downloaded
 
