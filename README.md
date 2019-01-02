@@ -53,4 +53,4 @@ A Pneumonia random folder will be created, so terminal will tell you which is be
 
 
 **All h5 and hdf5 files must be placed on dataPretrainedModels!!** 
-**Hope you enjoy, and please, email us in case you want to improve our code!**:+1:
+**Hope you enjoy, and please, email us in case you want to improve our code!** :+1:
