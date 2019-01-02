@@ -20,7 +20,7 @@ The approach followed when determining the prediction has been the following:
 3) If the image has been predicted as pneumonia, the software locates the areas where the illness has been detected. 
 4) Afterwards, the “similar images” algorithm is applied for both cases, Pneumonia and Not Pneumonia:
 	- For case Pneumonia, test_one.py will show 2 similar images, one of them with Pneumonia (left) and another without(right), with the predicted bounding boxes printed on the test image (middle).   
-	![GitHub Logo](/examplesOfOutput/)
+	![GitHub Logo](/examplesOfOutput/pneumonia.png)
 	- For case Healthy, test_one.py will show 1 similar image, diagnosed as healthy too	
 	- For case Other diseases, test_one.py will show 1 similar image, diagnosed as other diseases too, and the diagnosis made by a RSNA doctor will be printed as well. So that, even though we can’t create a model of every single Other Disease, what we could say to the user is that the Most Similar image from the Database is this one, and it has X disease.
 	
@@ -33,13 +33,20 @@ You also need to download the data from https://www.kaggle.com/nih-chest-xrays/d
 
 ## Pretrained models:
 
-- **First classification:** custom Resnet (see classification1 for more information). Accuracy = 0.8
+- **First classification:** custom Resnet (see classification1 for more information).
 
-- **Second classification:** Inception ResNet V2. Accuracy = 0.7
+- **Second classification:** Inception ResNet V2.
 
-- **Localization:** Mask-RCNN. IoU = 0.6
+- **Localization:** Mask-RCNN.
 
 All python scripts for training for a new database are attached, for you to use them and see the performance for your own database.
+
+
+Paramether | Value
+------------ | -------------
+CNN1 accuracy | 0.8
+CNN2 accuracy | 0.7
+Localization IoU | 0.6
 
 
 ## Way to train your model:
