@@ -52,4 +52,5 @@ A Pneumonia random folder will be created, so terminal will tell you which is be
 - **Similar Images CNN1 and CNN2:** change ROOT_DIR. For each one, 1 csv is required. The first time you run the code, many variables will be stored for each classification on a folder called dataSimilarImages. You can switch the value of ‘not_guardar’ if you want to save or load these variables. The model used is loaded on the top of the code. We use the model created on Classification1 for the similar image of stage 1, so you might first run the Classification 1 code to get it. For the similar image of the 2nd stage, we provide the model used on the folder dataPretainedModels, which is a trained DenseNet. 
 
 
-**All h5 and hdf5 files must be placed on dataPretrainedModels!!**
+**All h5 and hdf5 files must be placed on dataPretrainedModels!!** 
+**Hope you enjoy, and please, email us in case you want to improve our code!**:+1:
