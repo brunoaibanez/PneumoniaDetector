@@ -4,7 +4,9 @@
 
 This project consists on diagnosing pneumonia from x-rays using a deep learning algorithm. The application’s functionality is, given a radiograph in DCM format, predict whether the image has pneumonia or not. Apart from this, with the prediction it also gives a couple of “similar images”, having and not the illness respectively, so that doctors can compare and confirm the result. Nevertheless, the diagnosis is not done in such a basic way. 
 For you to check the performance of our system, the way to execute the test for one input image is:
+
 **python3 test_one.py —db_path dir/dir/path_to_image/image.dcm**
+
 But, firstly, some paths must be changed, ROOT_DIR (where this GitHub folder will be located) and DATA_DIR (where data will be located, even though you are only using the test_one, so similar images will be searched on that folder too)
 The approach followed when determining the prediction has been the following: 
 1) The program distinguishes if the input radiograph is most likely to have:
