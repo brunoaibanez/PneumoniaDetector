@@ -2,7 +2,8 @@
 
 ## Introduction
 
-This project consists on diagnosing pneumonia from x-rays using a deep learning algorithm. The application’s functionality is, given a radiograph in DCM format, predict whether the image has pneumonia or not. Apart from this, with the prediction it also gives a couple of “similar images”, having and not the illness respectively, so that doctors can compare and confirm the result. Nevertheless, the diagnosis is not done in such a basic way. 
+This project consists on diagnosing pneumonia from x-rays using a deep learning algorithm. The application’s functionality is, given a radiograph in DCM format, predict whether the image has pneumonia or not. Apart from this, with the prediction it also gives a couple of “similar images”, having and not the illness respectively, so that doctors can compare and confirm the result. Nevertheless, the diagnosis is not done in such a basic way. Some files are missing because of file dimensions Github constraints. Email us, do not worry about it!
+
 For you to check the performance of our system, the way to execute the test for one input image is:
 
 	python3 test_one.py —db_path dir/dir/path_to_image/image.dcm --out_path dir/path_to_your_output/
@@ -65,7 +66,6 @@ Where bounding boxes will be separated by spaces, such as: x1 y1 height width
 A Pneumonia random folder will be created, so terminal will tell you which is best epoch, to get weights from that epoch for the testing. Change the name of the file to locateweightsfinal.h5 and place it on dataPretrainedModels.
 
 - **Similar Images CNN1 and CNN2:** change ROOT_DIR. For each one, 1 csv is required. The first time you run the code, many variables will be stored for each classification on a folder called dataSimilarImages. You can switch the value of ‘not_guardar’ if you want to save or load these variables. The model used is loaded on the top of the code. We use the model created on Classification1 for the similar image of stage 1, so you might first run the Classification 1 code to get it. For the similar image of the 2nd stage, we provide the model used on the folder dataPretainedModels, which is a trained DenseNet. 
-
 
 **All h5 and hdf5 files must be placed on dataPretrainedModels!!** 
 
