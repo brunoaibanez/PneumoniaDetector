@@ -8,11 +8,11 @@ For you to check the performance of our system, the way to execute the test for 
 But, firstly, some paths must be changed, ROOT_DIR (where this GitHub folder will be located) and DATA_DIR (where data will be located, even though you are only using the test_one, so similar images will be searched on that folder too)
 The approach followed when determining the prediction has been the following: 
 1) The program distinguishes if the input radiograph is most likely to have:
-	• Pneumonia
-	• Not pneumonia 
+ • Pneumonia
+ • Not pneumonia 
 2) After the previous classification, if the input image has been classified as Not pneumonia, the application differs between:
-	• Healthy
-	• Other diseases 
+ • Healthy
+ • Other diseases 
 3) If the image has been predicted as pneumonia, the software locates the areas where the illness has been detected. 
 4) Afterwards, the “similar images” algorithm is applied for both cases, Pneumonia and Not Pneumonia:
 	- For case Pneumonia, test_one.py will show 2 similar images, one of them with Pneumonia (left) and another without (right), with the predicted bounding boxes printed on the test image (middle).   
